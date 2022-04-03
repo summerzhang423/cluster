@@ -23,3 +23,12 @@ There are two terms that need to be clarified here, one is "unsupervised" the ot
 - Repeat step 2 to 4 until one of the following conditions is met:
       - k centroids have been samples
       - run out the max number of iterations
+
+## 3. Visualization with K-means in 1 or 2 dimension(s)
+
+<table border="0">
+<tr valign="top" border="0">
+<td border="0"><img src="image/1d_cluster.png" width="100%"></a></td>
+<td border="0"><img src="image/2d_cluster.png" width="100%"></a></td>	
+</tr>
+</table>
