@@ -26,9 +26,58 @@ There are two terms that need to be clarified here, one is "unsupervised" the ot
 
 ## 3. Visualization with K-means in 1 or 2 dimension(s)
 
+with basic k-means algorithm, we can see 1D or 2D dataset can be clustered as following:
+
 <table border="0">
 <tr valign="top" border="0">
 <td border="0"><img src="image/1d_cluster.png" width="100%"></a></td>
 <td border="0"><img src="image/2d_cluster.png" width="100%"></a></td>	
 </tr>
 </table>
+
+However, if we re-run the algorithm, we get very different clustering result
+
+<table border="0">
+<tr valign="top" border="0">
+<td border="0"><img src="image/unstable1.png" width="100%"></a></td>
+<td border="0"><img src="image/unstable2.png" width="100%"></a></td>	
+<td border="0"><img src="image/unstable3.png" width="100%"></a></td>	
+</tr>
+</table>
+
+## 4. Issues with K-means / Improvement
+
+Given the visualizations shown above, we noticed following issues:
+- This algorithm does not give the best clustering result (inner circle should be clustered together while the outer circle belongs to a different cluster)
+- Initializer K drastically impact the clustering result
+- when the data has a more complex patter (like the "circle" above), the algorithm does not have accurate result
+
+:rocket: Improvement #1: Implement Kmean ++
+
+The idea of Kmean++ is one of the improvements we can do in order to make the initialization result closer to the optimal (less random than just Kmeans).
+
+- Step 1: we first randomly select one initial point
+- Step 2: for the rest points (k-1), we will compute the minimum distance between each data point and previously chosen centroid. Once we have a list of the minimum distance for each datapoint, we will find the maximum distance.
+      - the intuition behind this is the point having the maximum distance from the nearest centroid is most likely to be cohsen as the next centroid
+- Step 3: Repeat step 1 and 2 until all the K centroids are chosen
+
+<table border="0">
+<tr valign="top" border="0">
+<td border="0"><img src="image/kmean.png" width="100%"></a></td>
+<td border="0"><img src="image/kmean++.png" width="100%"></a></td>		
+</tr>
+</table>
+
+:rocket: Improvement #2: Improving with kmeans++ and spectral clustering
+
+- **compute similiarty graph**; whether it is KNN, fully connected or ε-neighborhood graph, we are trying to create a connection between all the points.
+- **convert the data to low-dimensional space**; sometime the data points to be far from each other (coule be farther way than a data point in a different cluster), but that does not mean they are not connect. So the objective is to cluster everything that is close to each other when data set is converted into a low-dimension space.
+- **create the cluster**; using the second eigenvalue to assign values (2nd vector indicates how closely connected the data are in a graph)
+
+<table border="0">
+<tr valign="top" border="0">
+<td border="0"><img src="image/spectral_clustering.png" width="100%"></a></td>	
+</tr>
+</table>
+
+
