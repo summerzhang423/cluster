@@ -76,7 +76,7 @@ The idea of Kmean++ is one of the improvements we can do in order to make the in
 
 <table border="0">
 <tr valign="top" border="0">
-<td border="0"><img src="image/spectral_clustering.png" width="100%"></a></td>	
+<td border="0"><img src="image/spectral_clustering.png" width="50%"></a></td>	
 </tr>
 </table>
 
