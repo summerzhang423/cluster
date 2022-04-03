@@ -78,7 +78,7 @@ The idea of Kmean++ is one of the improvements we can do in order to make the in
 
 ## 5. Kmeans accuracty
 
-<img src="image/accuracy.png" width="200">
+<img src="image/accuracy.png" width="300">
 
 ## 6. Kmeans application 
 
