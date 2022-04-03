@@ -1,4 +1,4 @@
-# cluster
+# Clustering (kmeans)
 
 :closed_book: This report is organized in following topics:
 1. What is Kmeans
