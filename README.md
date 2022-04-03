@@ -82,6 +82,8 @@ The idea of Kmean++ is one of the improvements we can do in order to make the in
 
 ## 6. Kmeans application 
 
+One of the clustering application is using clustering to image compression. Here is an example of using just 4 clusters to compress a greyed-out image
+
 <table border="0">
 <tr valign="top" border="0">
 <td border="0"><img src="image/before.png" width="100%"></a></td>
