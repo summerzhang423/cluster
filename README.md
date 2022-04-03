@@ -74,7 +74,7 @@ The idea of Kmean++ is one of the improvements we can do in order to make the in
 - **convert the data to low-dimensional space**; sometime the data points to be far from each other (coule be farther way than a data point in a different cluster), but that does not mean they are not connect. So the objective is to cluster everything that is close to each other when data set is converted into a low-dimension space.
 - **create the cluster**; using the second eigenvalue to assign values (2nd vector indicates how closely connected the data are in a graph)
 
-<img src="image/spectral_clustering.png" width="500">
+<img src="image/spectral_clustering.png" width="200">
 
 ## 5. Kmeans accuracty
 
