@@ -1,6 +1,6 @@
 # cluster
 
-This report is organized in following topics:
+:closed_book: This report is organized in following topics:
 1. What is Kmeans
 2. How does it work / Algorithm
 3. Visualization with K-means in 1 or 2 dimension(s)
