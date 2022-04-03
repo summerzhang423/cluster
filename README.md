@@ -76,5 +76,15 @@ The idea of Kmean++ is one of the improvements we can do in order to make the in
 
 <img src="image/spectral_clustering.png" width="500">
 
+## 5. Kmeans accuracty
 
+<img src="image/accuracy.png" width="200">
 
+## 6. Kmeans application 
+
+<table border="0">
+<tr valign="top" border="0">
+<td border="0"><img src="image/before.png" width="100%"></a></td>
+<td border="0"><img src="image/after.png" width="100%"></a></td>		
+</tr>
+</table>
