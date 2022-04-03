@@ -88,3 +88,17 @@ The idea of Kmean++ is one of the improvements we can do in order to make the in
 <td border="0"><img src="image/after.png" width="100%"></a></td>		
 </tr>
 </table>
+
+## Conclusion
+
+In summary, we have looked at the definition of what kmeans does, how the algorithm is implemented. We then looked at the visual representation on how Kmeans is applied for 1D, 2D or multiple-Dimension datasets. During the process we noticed:
+
+- the initial k centroid heavily impact the final result
+- data complexity also influence the kmeans performance
+
+In order to overcome these obsticles, we have done the following two methods:
+
+- we implemented a new method to select initializer k, which is known as kmeans++.
+- we tried to used spectral clustering method to completely overcome data complexity
+
+Lastly, we applied kmeans methods to one of the real-world applications - image compression. We tried both on greyed picture and colored pictures. We noticed that the more clusters we have, the longer it takes the algorithm to run, which indicates that kmeans could be very expensive to run on a scale.
